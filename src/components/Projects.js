@@ -34,11 +34,23 @@ const Projects = () => {
             </p>
             <div className="projects__item__box__links">
               <div className="projects__item__box__link__container">
-                <a href="#">Code source</a>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code source
+                </a>
                 <FaCode />
               </div>
               <div className="projects__item__box__link__container">
-                <a href="#">Demo</a>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Demo
+                </a>
                 <FaPlayCircle />
               </div>
             </div>
@@ -53,11 +65,23 @@ const Projects = () => {
             </p>
             <div className="projects__item__box__links">
               <div className="projects__item__box__link__container">
-                <a href="#">Code source</a>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code source
+                </a>
                 <FaCode />
               </div>
               <div className="projects__item__box__link__container">
-                <a href="#">Demo</a>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Demo
+                </a>
                 <FaPlayCircle />
               </div>
             </div>
@@ -72,11 +96,23 @@ const Projects = () => {
             </p>
             <div className="projects__item__box__links">
               <div className="projects__item__box__link__container">
-                <a href="#">Code source</a>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code source
+                </a>
                 <FaCode />
               </div>
               <div className="projects__item__box__link__container">
-                <a href="#">Demo</a>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Demo
+                </a>
                 <FaPlayCircle />
               </div>
             </div>
@@ -91,11 +127,23 @@ const Projects = () => {
             </p>
             <div className="projects__item__box__links">
               <div className="projects__item__box__link__container">
-                <a href="#">Code source</a>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code source
+                </a>
                 <FaCode />
               </div>
               <div className="projects__item__box__link__container">
-                <a href="#">Demo</a>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Demo
+                </a>
                 <FaPlayCircle />
               </div>
             </div>
@@ -110,11 +158,23 @@ const Projects = () => {
             </p>
             <div className="projects__item__box__links">
               <div className="projects__item__box__link__container">
-                <a href="#">Code source</a>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code source
+                </a>
                 <FaCode />
               </div>
               <div className="projects__item__box__link__container">
-                <a href="#">Demo</a>
+                <a
+                  href="https://www.google.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Demo
+                </a>
                 <FaPlayCircle />
               </div>
             </div>

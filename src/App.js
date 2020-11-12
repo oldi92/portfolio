@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import emailjs from "emailjs-com";
 
@@ -43,6 +43,16 @@ const App = () => {
       });
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", (event) =>
+      console.log(window.pageYOffset)
+    );
+  });
+
+  const scrollToTop = (px) => {
+    window.scrollTo({ top: px, behavior: "smooth" });
+  };
+
   return (
     <div className="container">
       <Alert error={error} success={success} />
@@ -50,7 +60,7 @@ const App = () => {
       <TechnicalStuck />
       <Projects />
       <Contact submitCallback={submitHandler} loading={loading} />
-      <Footer />
+      <Footer scrollToTopCallBack={scrollToTop} />
     </div>
   );
 };

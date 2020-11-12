@@ -32,7 +32,7 @@ const Contact = ({ submitCallback, loading }) => {
 
   return (
     <div className="contact">
-      <div className="contact__title">Tittle</div>
+      <div className="contact__title">Drop a Message</div>
 
       <form onSubmit={formValidation} className="contact__form">
         <div className="contact__form__name">
