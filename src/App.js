@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import emailjs from "emailjs-com";
 
@@ -20,10 +20,10 @@ const App = () => {
 
     emailjs
       .send(
-        "service_5hotebh",
-        "template_wv0wrkb",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form,
-        "user_sHO6RSaT3gOeVEgdyVCKi"
+        process.env.REACT_APP_USER_ID
       )
       .then(() => {
         setLoading(false);
