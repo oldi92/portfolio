@@ -43,12 +43,6 @@ const App = () => {
       });
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", (event) =>
-      console.log(window.pageYOffset)
-    );
-  });
-
   const scrollToTop = (px) => {
     window.scrollTo({ top: px, behavior: "smooth" });
   };
