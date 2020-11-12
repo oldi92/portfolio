@@ -499,15 +499,31 @@ code {
   margin-right: 1rem;
 }
 
-.footer__menu {
-}
-
 .footer__menu div {
   margin-bottom: 0.5rem;
 }
 
-.footer__contact div {
+.footer__menu div:hover {
+  cursor: pointer;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact div,
+.footer__contact a {
   margin-bottom: 0.5rem;
+}
+
+.footer__contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__contact a:hover {
+  text-decoration: underline;
 }
 
 .footer__menu__title,
