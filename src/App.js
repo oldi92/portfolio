@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import emailjs from "emailjs-com";
 
@@ -10,9 +10,26 @@ import Footer from "./components/Footer";
 import Alert from "./components/Alert";
 
 const App = () => {
+  // const introRef = useRef();
+  const skillsRef = useRef();
+  const projectRef = useRef();
+  const messageRef = useRef();
+
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [windowPositions, setWindowPositions] = useState();
+
+  useEffect(() => {
+    if (skillsRef && projectRef && messageRef) {
+      setWindowPositions({
+        intro: 0,
+        skills: skillsRef.current.offsetTop,
+        projects: projectRef.current.offsetTop,
+        message: messageRef.current.offsetTop,
+      });
+    }
+  }, [skillsRef, projectRef, messageRef]);
 
   const submitHandler = (form) => {
     // initialize spinner
@@ -43,17 +60,34 @@ const App = () => {
       });
   };
 
-  const scrollToTop = (px) => {
-    window.scrollTo({ top: px, behavior: "smooth" });
+  const scrollToTop = (trigeredFrom) => {
+    let pxToScroll = null;
+    if (trigeredFrom === "intro") {
+      pxToScroll = windowPositions.intro;
+    } else if (trigeredFrom === "technicalStuck") {
+      pxToScroll = windowPositions.skills;
+    } else if (trigeredFrom === "projects") {
+      pxToScroll = windowPositions.projects;
+    } else if (trigeredFrom === "message") {
+      pxToScroll = windowPositions.message;
+    }
+
+    window.scrollTo({ top: pxToScroll, behavior: "smooth" });
   };
+
+  console.log(windowPositions);
 
   return (
     <div className="container">
       <Alert error={error} success={success} />
       <Header />
-      <TechnicalStuck />
-      <Projects />
-      <Contact submitCallback={submitHandler} loading={loading} />
+      <TechnicalStuck forwardRef={skillsRef} />
+      <Projects forwardRef={projectRef} />
+      <Contact
+        forwardRef={messageRef}
+        submitCallback={submitHandler}
+        loading={loading}
+      />
       <Footer scrollToTopCallBack={scrollToTop} />
     </div>
   );

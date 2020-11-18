@@ -7,9 +7,9 @@ import Mongo from "../assets/images/mongo.png";
 import Html5 from "../assets/images/html5.png";
 import Sass from "../assets/images/sass.png";
 
-const TechnicalStuck = () => {
+const TechnicalStuck = (props) => {
   return (
-    <div className="technical__stuck">
+    <div ref={props.forwardRef} className="technical__stuck">
       <div className="technical__stuck__title">Technical Stuck</div>
       <div className="technical__stuck__box__container">
         <div className="technical__stuck__box box__1">

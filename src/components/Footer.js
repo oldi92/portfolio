@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = (props) => {
-  const [intro] = useState(200);
-  const [technicalStuck] = useState(1020);
-  const [projects] = useState(2100);
-  const [message] = useState(3100);
+  const [intro] = useState("intro");
+  const [technicalStuck] = useState("technicalStuck");
+  const [projects] = useState("projects");
+  const [message] = useState("message");
   const { scrollToTopCallBack } = props;
 
   return (

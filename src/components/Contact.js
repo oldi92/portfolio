@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import Spinner from "./Spinner";
 
-const Contact = ({ submitCallback, loading }) => {
+const Contact = ({ submitCallback, loading, forwardRef }) => {
   const [errorFirstName, setErrorFirstName] = useState(false);
   const [errorEmail, setErrorEmail] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
@@ -31,7 +31,7 @@ const Contact = ({ submitCallback, loading }) => {
   };
 
   return (
-    <div className="contact">
+    <div ref={forwardRef} className="contact">
       <div className="contact__title">Drop a Message</div>
 
       <form onSubmit={formValidation} className="contact__form">

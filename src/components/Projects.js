@@ -2,9 +2,9 @@ import React from "react";
 
 import { FaPlayCircle, FaCode } from "react-icons/fa";
 
-const Projects = () => {
+const Projects = (props) => {
   return (
-    <div className="projects">
+    <div ref={props.forwardRef} className="projects">
       <div className="projects__title">My Projects</div>
       <div className="projects__list">
         <div className="projects__item project__1">
