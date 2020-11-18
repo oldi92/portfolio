@@ -1,18 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Image from "../assets/images/working.png";
 
-const Header = () => {
+import NavigationMenu from "./NavigationMenu";
+import SideDrawer from "./SideDrawer";
+
+import { FaBars } from "react-icons/fa";
+
+const Header = (props) => {
+  const { scrollToTopCallBack } = props;
+
+  const [sideDrawertoggle, setSideDrawertoggle] = useState(false);
+
   return (
     <div className="header">
       <div className="header__navigation">
         <h2>Logo</h2>
-        <nav className="navigation">
-          <ul className="navigation__list">
-            <li className="navigation__item">Projects</li>
-            <li className="navigation__item">Contact</li>
-          </ul>
-        </nav>
+
+        <NavigationMenu
+          // onSelectMenuItem={() => setSideDrawertoggle(false)}
+          scrollToTopCallBack={scrollToTopCallBack}
+          header={true}
+        />
+        <SideDrawer
+          scrollToTopCallBack={scrollToTopCallBack}
+          setToggle={(toggle) => setSideDrawertoggle(toggle)}
+          toggle={sideDrawertoggle}
+        />
+        <FaBars
+          onClick={() => setSideDrawertoggle(true)}
+          className="drawer__bars"
+        />
       </div>
       <div className="header__content">
         <div className="header__box">

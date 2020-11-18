@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
+// icons
+import { FaGithubAlt, FaLinkedinIn, FaPhone, FaEnvelope } from "react-icons/fa";
 
 const Footer = (props) => {
   const [intro] = useState("intro");
@@ -52,8 +53,14 @@ const Footer = (props) => {
         </div>
         <div className="footer__contact">
           <div className="footer__contact__title">Contact</div>
-          <a href="tel:00447507588611">+44 7507588611</a>
-          <a href="mailto:oldi.prillo@gmail.com">oldi.prillo@gmail.com</a>
+          <a href="tel:00447507588611">
+            <FaPhone />
+            +44 7507588611
+          </a>
+          <a href="mailto:oldi.prillo@gmail.com">
+            <FaEnvelope />
+            oldi.prillo@gmail.com
+          </a>
         </div>
       </div>
       <div className="copyright">© Copyright Oldi 2020</div>

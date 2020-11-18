@@ -1,13 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
 
+// dependencies
 import emailjs from "emailjs-com";
+import smoothscroll from "smoothscroll-polyfill";
 
+// components
 import Header from "./components/Header";
 import TechnicalStuck from "./components/TechnicalStuck";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Alert from "./components/Alert";
+
+// scroll smooth polyfill!
+smoothscroll.polyfill();
 
 const App = () => {
   // const introRef = useRef();
@@ -75,12 +81,11 @@ const App = () => {
     window.scrollTo({ top: pxToScroll, behavior: "smooth" });
   };
 
-  console.log(windowPositions);
-
   return (
     <div className="container">
       <Alert error={error} success={success} />
-      <Header />
+
+      <Header scrollToTopCallBack={scrollToTop} />
       <TechnicalStuck forwardRef={skillsRef} />
       <Projects forwardRef={projectRef} />
       <Contact
