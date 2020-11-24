@@ -40,7 +40,7 @@ const useStyles = makeStyles(() =>
 
       "& .MuiAccordionDetails-root": {
         paddingLeft: "1.8rem",
-        backgroundColor: "#808080",
+        borderTop: "1.5px solid #808080",
       },
     },
   })
@@ -87,7 +87,7 @@ const NavigationMenu = (props) => {
           >
             <FaTools className="navigation__item__icon" />
             <div onClick={() => scrtollToTopHanlder(technicalStuck)}>
-              Technical Stuck
+              Technical Stack
             </div>
           </li>
           <li
@@ -120,7 +120,14 @@ const NavigationMenu = (props) => {
             >
               <Accordion className={classes.accordion}>
                 <AccordionSummary
-                  expandIcon={<FaArrowDown style={{ color: "#fff" }} />}
+                  expandIcon={
+                    <FaArrowDown
+                      style={{
+                        fontSize: "1rem",
+                        color: "#fff",
+                      }}
+                    />
+                  }
                   aria-controls="panel2a-content"
                   id="panel2a-header"
                 >
