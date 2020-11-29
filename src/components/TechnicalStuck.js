@@ -26,12 +26,12 @@ const TechnicalStuck = (props) => {
         <div className="technical__stuck__box box__2">
           <div>React</div>
           <p>
-            Proficient experience with React working in commercial projects with
-            sometimes leading responsibilities.Good coding structure, reusable
+            Proficient experience with React working on commercial projects with
+            sometimes leading responsibilities. Good coding structure, reusable
             components with a result developing simple and very fast
             applications. Great knowledge with react hooks and developing
-            applications completely with functional components. Finally, i want
-            to add on my tech stack react's best friends Redux and redux-thunk.
+            applications completely with functional components. Finally, I want
+            to add to my tech stack react's best friends Redux and redux-thunk.
           </p>
         </div>
         <div className="technical__stuck__box box__3">

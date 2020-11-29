@@ -45,7 +45,7 @@ const projects = [
     demoDisabled: true,
     codeLink: "none",
     demoLink: "none",
-    image: "findit360",
+    image: "longitude",
     shortDescription:
       "Longitude is an internal application for task management similar to Trello. This was an individual project and I was called to build a full stack application with React Typescript in frontend. Strapi and PostgreSql to sit on the backend.",
     description:

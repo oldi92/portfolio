@@ -93,7 +93,7 @@ code {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .drawer__bars {
@@ -499,18 +499,6 @@ code {
 }
 .project__2 {
   background-image: url("./assets/images/findit360mobile.png");
-}
-.project__3 {
-  background-image: url("./assets/images/project-3.png");
-}
-.project__4 {
-  background-image: url("./assets/images/project-4.png");
-}
-.project__5 {
-  background-image: url("./assets/images/project-5.png");
-}
-.project__6 {
-  background-image: url("./assets/images/project-6.png");
 }
 
 @media screen and (min-width: 1450px) {
