@@ -30,7 +30,7 @@ const SideDrawer = (props) => {
     <div className="navigation__drawer">
       <SwipeableDrawer
         className={classes.sideDrawer}
-        anchor="right"
+        anchor="left"
         open={toggle}
         onClose={() => setToggle(false)}
         onOpen={() => setToggle(true)}

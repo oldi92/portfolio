@@ -35,11 +35,13 @@ const Header = (props) => {
       <div className="header__content">
         <div className="header__box">
           <div className="box__title">Hello, i am Oldi</div>
-          <p>
-            I am a self tought junior web developer with passion a bout web
-            developing. My goal is to be the best web developer in the world.
-            And the rest is just a random text that i have to write only for the
-            paragraph.
+          <p className="box__paragraph">
+            a self-taught junior front end developer based in London. I have a
+            passion for programming and love to learn new technologies and new
+            things. I have proficient knowledge in javascript and special love
+            to its unique functionality which have changed the rules in software
+            development. Finally, i want to add my tech stack is web and mobile
+            applications.
           </p>
         </div>
         <div className="header__box">

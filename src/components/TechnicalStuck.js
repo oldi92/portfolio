@@ -15,28 +15,33 @@ const TechnicalStuck = (props) => {
         <div className="technical__stuck__box box__1">
           <div>Javascript</div>
           <p>
-            I am a self tought junior web developer with passion a bout web
-            developing. My goal is to be the best web developer in the world.
-            And rest is just a random text that i have to write only for the
-            paragraph.
+            Experience with javascript for nearly 2 years and with a strong
+            understanding of javascript and its unique functionality. I have
+            commercial experience in developing web and mobile applications as
+            part of a team and as an individual. Good understanding of OOP,
+            inheritance, prototype. Proficient working with Restful API, ES6 and
+            ES5 syntax.
           </p>
         </div>
         <div className="technical__stuck__box box__2">
           <div>React</div>
           <p>
-            I am a self tought junior web developer with passion a bout web
-            developing. My goal is to be the best web developer in the world.
-            And rest is just a random text that i have to write only for the
-            paragraph.
+            Proficient experience with React working on commercial projects with
+            sometimes leading responsibilities. Good coding structure, reusable
+            components with a result developing simple and very fast
+            applications. Great knowledge with react hooks and developing
+            applications completely with functional components. Finally, I want
+            to add to my tech stack react's best friends Redux and redux-thunk.
           </p>
         </div>
         <div className="technical__stuck__box box__3">
           <div>Node js</div>
           <p>
-            I am a self tought junior web developer with passion a bout web
-            developing. My goal is to be the best web developer in the world.
-            And rest is just a random text that i have to write only for the
-            paragraph.
+            I have start learning node js the last couple of months. I just had
+            my hand dirty building simple back end applications. I have built
+            full-stack personal applications with node, react and mongo db.
+            Also, i have built Restful APIs applications, user authentication
+            with passport library and integrate google OAuth.
           </p>
         </div>
         <div className="technical__stuck__box box__4">

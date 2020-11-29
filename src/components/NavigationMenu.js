@@ -33,15 +33,34 @@ const useStyles = makeStyles(() =>
       border: "none",
       boxShadow: "none",
       width: "100%",
+      fontSize: "1rem",
 
       "& .MuiButtonBase-root": {
         paddingLeft: "0",
       },
 
       "& .MuiAccordionDetails-root": {
-        paddingLeft: "1.8rem",
-        backgroundColor: "#808080",
+        paddingLeft: "1.5rem",
+        borderTop: "1.5px solid #808080",
       },
+    },
+    accordionDetail: {
+      position: "relative",
+      backgroundColor: "#fff",
+      color: "#595959",
+    },
+    accordionTringle: {
+      position: "absolute",
+      top: "-9px",
+      width: 0,
+      height: 0,
+      borderLeft: "10px solid transparent",
+      borderRight: "10px solid transparent",
+      borderBottom: "10px solid #fff",
+    },
+    accordionArrowDown: {
+      fontSize: "0.8rem",
+      color: "#fff",
     },
   })
 );
@@ -87,7 +106,7 @@ const NavigationMenu = (props) => {
           >
             <FaTools className="navigation__item__icon" />
             <div onClick={() => scrtollToTopHanlder(technicalStuck)}>
-              Technical Stuck
+              Technical Stack
             </div>
           </li>
           <li
@@ -120,14 +139,19 @@ const NavigationMenu = (props) => {
             >
               <Accordion className={classes.accordion}>
                 <AccordionSummary
-                  expandIcon={<FaArrowDown style={{ color: "#fff" }} />}
+                  expandIcon={
+                    <FaArrowDown className={classes.accordionArrowDown} />
+                  }
                   aria-controls="panel2a-content"
                   id="panel2a-header"
                 >
                   <FaIdBadge className="navigation__item__icon" />
                   <div onClick={handleClick}>Info</div>
                 </AccordionSummary>
-                <AccordionDetails>Profile</AccordionDetails>
+                <AccordionDetails className={classes.accordionDetail}>
+                  <div className={classes.accordionTringle}></div>
+                  Profile
+                </AccordionDetails>
               </Accordion>
             </li>
           )}

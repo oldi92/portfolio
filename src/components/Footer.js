@@ -16,8 +16,7 @@ const Footer = (props) => {
         <div className="footer__widget">
           <div className="footer__title">Logo</div>
           <p className="footer__widget__paragraph">
-            Nulla fugiat sint labore est ea tempor adipisicing ex laboris ex id
-            nisi amet ullamco.
+            “ Code is like humor. When you have to explain it, it’s bad ”
           </p>
           <div>
             <ul className="footer__widget__social">

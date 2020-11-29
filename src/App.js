@@ -30,9 +30,9 @@ const App = () => {
     if (skillsRef && projectRef && messageRef) {
       setWindowPositions({
         intro: 0,
-        skills: skillsRef.current.offsetTop,
-        projects: projectRef.current.offsetTop,
-        message: messageRef.current.offsetTop,
+        skills: skillsRef.current.offsetTop + 150,
+        projects: projectRef.current.offsetTop + 150,
+        message: messageRef.current.offsetTop + 100,
       });
     }
   }, [skillsRef, projectRef, messageRef]);
