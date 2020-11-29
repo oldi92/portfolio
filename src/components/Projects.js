@@ -25,7 +25,7 @@ const projects = [
   },
   {
     id: "findit360mobile",
-    title: "Find It 360 Mobile App",
+    title: "Find It 360 Mobile",
     codeDisabled: true,
     demoDisabled: true,
     demoTooltip: "App is progress.",

@@ -208,7 +208,7 @@ code {
 
 @media screen and (max-width: 450px) {
   .header {
-    /* height: 1000px; */
+    height: 1100px;
   }
 
   .box__title {
@@ -332,6 +332,12 @@ code {
   }
 }
 
+@media (max-width: 450px) {
+  .technical__stuck__box {
+    padding: 1rem;
+  }
+}
+
 /* 
  * PROJECTS
  */
@@ -442,6 +448,7 @@ code {
 
 .projects__item__box__title {
   padding-bottom: 1rem;
+  margin-top: 0.5rem;
   font-weight: bold;
   border-bottom: solid 1px;
   display: flex;
@@ -580,6 +587,8 @@ code {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  margin-top: 1.5rem;
+
   border-bottom: 1.5px solid #808080;
 }
 
