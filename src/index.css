@@ -299,6 +299,9 @@ code {
   .technical__stuck__box__container {
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   }
+  .technical__stuck__box p {
+    line-height: 150%;
+  }
 }
 
 @media screen and (min-width: 1450px) {
@@ -328,7 +331,7 @@ code {
   }
 
   .technical__stuck {
-    padding: 2rem 2rem 10rem 2rem;
+    padding: 0rem 2rem 6rem 2rem;
   }
 }
 
@@ -347,7 +350,7 @@ code {
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 900px;
+  height: 1300px;
   padding: 6rem;
   padding-bottom: 10rem;
 }
@@ -429,12 +432,8 @@ code {
 }
 
 .projects__item__box {
-  background: linear-gradient(
-    0.4turn,
-    rgba(52, 199, 151, 0.95),
-    rgba(168, 119, 186, 0.95)
-  );
-  color: white;
+  background-color: rgba(89, 89, 89, 0.97);
+  color: #fff;
   height: 100%;
   overflow-y: auto;
   box-sizing: border-box;
@@ -518,6 +517,12 @@ code {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  .projects {
+    height: 1400px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .projects {
     min-height: 1100px;
@@ -528,26 +533,30 @@ code {
   .projects__title {
     margin: 10rem 5rem 5rem 5rem;
   }
+
+  .projects {
+    height: 2100px;
+    background-position: center;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .projects__title {
-    margin: 6rem;
+    margin: 13rem 5rem 5rem 5rem;
   }
 
   .projects {
     padding: 2rem;
-    min-height: 1100px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .projects {
-    background-position: unset;
+    height: 2300px;
   }
 
   .projects__title {
-    margin: 8rem 0 6rem 0;
+    margin: 15rem 0 6rem 0;
   }
 
   .projects__item__box__links {
@@ -858,7 +867,7 @@ code {
 
 @media screen and (max-width: 550px) {
   .contact {
-    padding: 12rem 0rem 2rem 0rem;
+    padding: 2rem 0rem 2rem 0rem;
     margin: 0;
   }
 
