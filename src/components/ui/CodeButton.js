@@ -7,8 +7,6 @@ import { FaCode } from "react-icons/fa";
 const CodeButton = (props) => {
   const { disabled, codeLink, tooltipTtitle } = props;
 
-  console.log(disabled);
-
   if (disabled) {
     return (
       <Tooltip

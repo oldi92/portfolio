@@ -24,7 +24,6 @@ const useStyles = makeStyles(() =>
   createStyles({
     menudrop: {
       "& .MuiPaper-rounded": {
-        backgroundColor: "#595959",
         color: "#fff",
         top: "100px !important",
       },
@@ -34,9 +33,11 @@ const useStyles = makeStyles(() =>
       boxShadow: "none",
       width: "100%",
       fontSize: "1rem",
+      backgroundColor: "unset",
 
       "& .MuiButtonBase-root": {
         paddingLeft: "0",
+        color: "#fff",
       },
 
       "& .MuiAccordionDetails-root": {
@@ -46,8 +47,8 @@ const useStyles = makeStyles(() =>
     },
     accordionDetail: {
       position: "relative",
-      backgroundColor: "#fff",
       color: "#595959",
+      backgroundColor: "#fff",
     },
     accordionTringle: {
       position: "absolute",

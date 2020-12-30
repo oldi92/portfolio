@@ -108,16 +108,6 @@ const Projects = (props) => {
     setShowModal(true);
   };
 
-  const projectsTechs = (projectSelected) => {
-    const projectTechs = projects.filter(
-      (projcet) => projcet.id === projectSelected
-    );
-
-    return projectTechs[0];
-  };
-
-  console.log(projectsTechs("findit360"));
-
   return (
     <div ref={props.forwardRef} className="projects">
       <div className="projects__title">My Projects</div>

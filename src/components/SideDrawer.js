@@ -14,8 +14,8 @@ const useStyles = makeStyles(() =>
         background: "transparent",
       },
 
-      "& .MuiPaper-root": {
-        backgroundColor: "#595959",
+      "& > .MuiPaper-root": {
+        background: "linear-gradient(#30CFD0, #330867);",
         color: "#fff",
       },
     },
