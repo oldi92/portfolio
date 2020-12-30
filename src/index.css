@@ -5,6 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  perspective: 1000px;
 }
 
 ::-webkit-scrollbar {
@@ -233,14 +234,15 @@ code {
  */
 
 .technical__stuck {
-  padding: 3rem 6rem;
+  padding: 0rem 6rem 10rem 6rem;
 }
 
 .technical__stuck__box__container {
   display: grid;
-  row-gap: 6rem;
-  column-gap: 6rem;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+  justify-content: center;
+  row-gap: 3rem;
+  column-gap: 3rem;
 }
 
 .technical__stuck__title {
@@ -251,7 +253,22 @@ code {
 }
 
 .technical__stuck__box {
+  /* position: relative; */
+  transform-style: preserve-3d;
+  min-height: 80vh;
   padding: 3rem;
+  min-height: 300px;
+  min-width: 400px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.technical__stuck__box__icon {
+  font-size: 4rem;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .technical__stuck__box div {
@@ -262,33 +279,35 @@ code {
 
 .technical__stuck__box p {
   padding: 0.5rem;
-  background-color: #fff;
   text-align: justify;
-  color: rgba(0, 0, 0, 0.8);
 }
 
 .box__1 {
-  background-image: url("./assets/images/js.png");
-  background-size: contain;
+  background-image: url("./assets/images/javascript-background.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .box__2 {
-  background-image: url("./assets/images/react.png");
-  background-size: contain;
+  background-image: url("./assets/images/react-background.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .box__3 {
-  background-image: url("./assets/images/nodejs.png");
-  background-size: contain;
+  background-image: url("./assets/images/node-background.png");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
 }
 
 .box__4 {
+  background-image: url("./assets/images/other-skills-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   justify-items: center;
