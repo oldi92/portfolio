@@ -7,6 +7,8 @@ import SideDrawer from "./SideDrawer";
 
 import { FaBars } from "react-icons/fa";
 
+import Logo from "./Logo";
+
 const Header = (props) => {
   const { scrollToTopCallBack } = props;
 
@@ -15,10 +17,9 @@ const Header = (props) => {
   return (
     <div className="header">
       <div className="header__navigation">
-        <h2>Logo</h2>
+        <Logo />
 
         <NavigationMenu
-          // onSelectMenuItem={() => setSideDrawertoggle(false)}
           scrollToTopCallBack={scrollToTopCallBack}
           header={true}
         />

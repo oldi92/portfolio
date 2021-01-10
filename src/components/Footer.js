@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 // icons
 import { FaGithubAlt, FaLinkedinIn, FaPhone, FaEnvelope } from "react-icons/fa";
+import Logo from "./Logo";
 
 const Footer = (props) => {
   const [intro] = useState("intro");
@@ -14,7 +15,9 @@ const Footer = (props) => {
     <div className="footer">
       <div className="footer__content">
         <div className="footer__widget">
-          <div className="footer__title">Logo</div>
+          <div className="footer__title">
+            <Logo />
+          </div>
           <p className="footer__widget__paragraph">
             “ Code is like humor. When you have to explain it, it’s bad ”
           </p>
