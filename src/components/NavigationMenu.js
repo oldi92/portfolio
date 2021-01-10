@@ -20,6 +20,8 @@ import {
 
 import { FaArrowDown } from "react-icons/fa";
 
+import Logo from "./Logo";
+
 const useStyles = makeStyles(() =>
   createStyles({
     menudrop: {
@@ -99,7 +101,9 @@ const NavigationMenu = (props) => {
         >
           {!header && (
             <li className="navigation__item__drawer">
-              <div onClick={() => scrtollToTopHanlder(intro)}>Logo</div>
+              <div onClick={() => scrtollToTopHanlder(intro)}>
+                <Logo />
+              </div>
             </li>
           )}
           <li
