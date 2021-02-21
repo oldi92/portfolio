@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -32,7 +32,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -41,7 +41,7 @@ code {
  */
 
 .header {
-  background-image: url("./assets/images/header-background.png");
+  background-image: url('./assets/images/header-background.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -283,6 +283,10 @@ code {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
 }
 
+.postgresql__icon {
+  width: 10rem;
+}
+
 .technical__stuck__box__title,
 .technical__stuck__box__paragraph,
 .technical__stuck__box__other {
@@ -300,6 +304,11 @@ code {
   font-size: 4rem;
 }
 
+.technical__stuck__box__icon__django {
+  margin-top: 0.5rem;
+  width: 8rem;
+}
+
 .technical__stuck__box div {
   font-size: 2rem;
   font-weight: 300;
@@ -312,28 +321,28 @@ code {
 }
 
 .box__1 {
-  background-image: url("./assets/images/javascript-background.png");
+  background-image: url('./assets/images/javascript-background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .box__2 {
-  background-image: url("./assets/images/react-background.png");
+  background-image: url('./assets/images/react-background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
 }
 
 .box__3 {
-  background-image: url("./assets/images/node-background.png");
+  background-image: url('./assets/images/node-background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .box__4 {
-  background-image: url("./assets/images/other-skills-background.png");
+  background-image: url('./assets/images/other-skills-background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -401,7 +410,7 @@ code {
  */
 
 .projects {
-  background-image: url("./assets/images/projects-background.png");
+  background-image: url('./assets/images/projects-background.png');
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -556,10 +565,10 @@ code {
 }
 
 .project__1 {
-  background-image: url("./assets/images/findit360.png");
+  background-image: url('./assets/images/findit360.png');
 }
 .project__2 {
-  background-image: url("./assets/images/findit360mobile.png");
+  background-image: url('./assets/images/findit360mobile.png');
 }
 
 @media screen and (min-width: 1450px) {
@@ -953,7 +962,7 @@ code {
  */
 
 .footer {
-  background-image: url("./assets/images/footer-background.png");
+  background-image: url('./assets/images/footer-background.png');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;

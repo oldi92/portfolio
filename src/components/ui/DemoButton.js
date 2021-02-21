@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 // dependencies
-import { Tooltip } from "@material-ui/core";
-import { FaPlayCircle } from "react-icons/fa";
+import { Tooltip } from '@material-ui/core';
+import { FaPlayCircle } from 'react-icons/fa';
 
 const DemoButton = (props) => {
   const { disabled, demoLink, tooltipTtitle } = props;
@@ -11,11 +11,11 @@ const DemoButton = (props) => {
     return (
       <Tooltip
         title={
-          tooltipTtitle ? tooltipTtitle : "Demo not available, is Private."
+          tooltipTtitle ? tooltipTtitle : 'Demo not available, is Private.'
         }
       >
-        <div className="projects__item__box__link__container link__disabled">
-          <div target="_blank" rel="noreferrer">
+        <div className='projects__item__box__link__container link__disabled'>
+          <div target='_blank' rel='noreferrer'>
             Demo
           </div>
           <FaPlayCircle />
@@ -24,8 +24,8 @@ const DemoButton = (props) => {
     );
   } else {
     return (
-      <div className="projects__item__box__link__container">
-        <a href={demoLink} target="_blank" rel="noreferrer">
+      <div className='projects__item__box__link__container'>
+        <a href={demoLink} target='_blank' rel='noreferrer'>
           Demo
         </a>
         <FaPlayCircle />

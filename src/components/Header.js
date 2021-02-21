@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-import Image from "../assets/images/working.png";
+import Image from '../assets/images/working.png';
 
-import NavigationMenu from "./NavigationMenu";
-import SideDrawer from "./SideDrawer";
+import NavigationMenu from './NavigationMenu';
+import SideDrawer from './SideDrawer';
 
-import { FaBars } from "react-icons/fa";
+import { FaBars } from 'react-icons/fa';
 
-import Logo from "./Logo";
+import Logo from './Logo';
 
 const Header = (props) => {
   const { scrollToTopCallBack } = props;
@@ -15,8 +15,8 @@ const Header = (props) => {
   const [sideDrawertoggle, setSideDrawertoggle] = useState(false);
 
   return (
-    <div className="header">
-      <div className="header__navigation">
+    <div className='header'>
+      <div className='header__navigation'>
         <Logo />
 
         <NavigationMenu
@@ -30,13 +30,13 @@ const Header = (props) => {
         />
         <FaBars
           onClick={() => setSideDrawertoggle(true)}
-          className="drawer__bars"
+          className='drawer__bars'
         />
       </div>
-      <div className="header__content">
-        <div className="header__box">
-          <div className="box__title">Hello, i am Oldi</div>
-          <p className="box__paragraph">
+      <div className='header__content'>
+        <div className='header__box'>
+          <div className='box__title'>Hello, i am Oldi</div>
+          <p className='box__paragraph'>
             a self-taught junior front end developer based in London. I have a
             passion for programming and love to learn new technologies and new
             things. I have proficient knowledge in javascript and special love
@@ -45,8 +45,8 @@ const Header = (props) => {
             applications.
           </p>
         </div>
-        <div className="header__box">
-          <img className="box__image" src={Image} alt="working" />
+        <div className='header__box'>
+          <img className='box__image' src={Image} alt='working' />
         </div>
       </div>
     </div>

@@ -1,16 +1,16 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from 'react';
 
 // dependencies
-import emailjs from "emailjs-com";
-import smoothscroll from "smoothscroll-polyfill";
+import emailjs from 'emailjs-com';
+import smoothscroll from 'smoothscroll-polyfill';
 
 // components
-import Header from "./components/Header";
-import TechnicalStuck from "./components/TechnicalStuck";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Alert from "./components/Alert";
+import Header from './components/Header';
+import TechnicalStuck from './components/TechnicalStuck';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Alert from './components/Alert';
 
 // scroll smooth polyfill!
 smoothscroll.polyfill();
@@ -46,7 +46,7 @@ const App = () => {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form,
-        process.env.REACT_APP_USER_ID
+        process.env.REACT_APP_USER_ID,
       )
       .then(() => {
         setLoading(false);
@@ -68,21 +68,21 @@ const App = () => {
 
   const scrollToTop = (trigeredFrom) => {
     let pxToScroll = null;
-    if (trigeredFrom === "intro") {
+    if (trigeredFrom === 'intro') {
       pxToScroll = windowPositions.intro;
-    } else if (trigeredFrom === "technicalStuck") {
+    } else if (trigeredFrom === 'technicalStuck') {
       pxToScroll = windowPositions.skills;
-    } else if (trigeredFrom === "projects") {
+    } else if (trigeredFrom === 'projects') {
       pxToScroll = windowPositions.projects;
-    } else if (trigeredFrom === "message") {
+    } else if (trigeredFrom === 'message') {
       pxToScroll = windowPositions.message;
     }
 
-    window.scrollTo({ top: pxToScroll, behavior: "smooth" });
+    window.scrollTo({ top: pxToScroll, behavior: 'smooth' });
   };
 
   return (
-    <div className="container">
+    <div className='container'>
       <Alert error={error} success={success} />
 
       <Header scrollToTopCallBack={scrollToTop} />

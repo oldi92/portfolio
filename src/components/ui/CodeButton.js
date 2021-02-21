@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 // dependencies
-import { Tooltip } from "@material-ui/core";
-import { FaCode } from "react-icons/fa";
+import { Tooltip } from '@material-ui/core';
+import { FaCode } from 'react-icons/fa';
 
 const CodeButton = (props) => {
   const { disabled, codeLink, tooltipTtitle } = props;
@@ -11,10 +11,10 @@ const CodeButton = (props) => {
     return (
       <Tooltip
         title={
-          tooltipTtitle ? tooltipTtitle : "Code not available, is Private."
+          tooltipTtitle ? tooltipTtitle : 'Code not available, is Private.'
         }
       >
-        <div className="projects__item__box__link__container link__disabled">
+        <div className='projects__item__box__link__container link__disabled'>
           <div>Code source</div>
           <FaCode />
         </div>
@@ -22,8 +22,8 @@ const CodeButton = (props) => {
     );
   } else {
     return (
-      <div className="projects__item__box__link__container">
-        <a href={codeLink} target="_blank" rel="noreferrer">
+      <div className='projects__item__box__link__container'>
+        <a href={codeLink} target='_blank' rel='noreferrer'>
           Code source
         </a>
         <FaCode />
