@@ -39,50 +39,6 @@ const projects = [
     technologies: ['Javascript', 'Ionic', 'React', 'Redux', 'Thunk'],
   },
   {
-    id: 'longitude',
-    title: 'Longitude',
-    codeDisabled: true,
-    demoDisabled: true,
-    codeLink: 'none',
-    demoLink: 'none',
-    image: 'longitude',
-    shortDescription:
-      'Longitude is an internal application for task management similar to Trello. This was an individual project and I was called to build a full stack application with React Typescript in frontend. Strapi and PostgreSql to sit on the backend.',
-    description:
-      'Longitude application was designed and build for the Carterhaugh company as an internal tool for task management. This project was developed only by me both front end and back end. I was requested to build and simple application dashboard for the users to be able to create delete edit and manage tasks with other colleagues. To the front end, i used React, Typescript, Redux Tool Kit and Thunk. To the back end, i used Strapi implementing user authentication with JWT token and PostgreSQL as a database. ',
-    technologies: [
-      'Javascript',
-      'React',
-      'Typescript',
-      'Strapi',
-      'PostgreSql',
-      'Redux',
-      'Thunk',
-    ],
-  },
-  {
-    id: 'kanbanboard',
-    title: 'Kanban Board',
-    codeDisabled: true,
-    demoDisabled: true,
-    codeLink: 'none',
-    demoLink: 'none',
-    demoTooltip: 'App is progress.',
-    image: 'kanbanboard',
-    shortDescription:
-      'Kanban board is a task management application similar Trello. The unique about this project which i am proud of is that we build a mobile application with react native and a web application with react native web and listen now carefully from a single code source. Yeah, you heard right!',
-    description:
-      'Kanban board is a task management application developing with a single source code with 3 different platforms ios, android and web. The first challenge i faced with this project is to set up all the dependencies and the environment correctly for 3 different platforms avoiding errors. The main challenge of this project is to implement and solve problems that are not compatible with react native and react native web e.g. the route navigation is different between them. The project was developed with React Native, Typescript, React Native Web, Redux Tool Kit and styled-components. I wrote all the code to React Native first, implement, solve and build it to React Native Web after.',
-    technologies: [
-      'Javascript',
-      'React Native',
-      'React Native Web',
-      'Typescript',
-      'Redux',
-      'Thunk',
-    ],
-  },
-  {
     id: 'movie',
     title: 'Movie Application',
     codeDisabled: false,

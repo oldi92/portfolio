@@ -37,10 +37,10 @@ const Header = (props) => {
         <div className='header__box'>
           <div className='box__title'>Hello, i am Oldi</div>
           <p className='box__paragraph'>
-            a self-taught junior front end developer based in London. I have a
-            passion for programming and love to learn new technologies and new
-            things. I have proficient knowledge in javascript and special love
-            to its unique functionality which have changed the rules in software
+            a self-taught full stack developer based in London. I have a passion
+            for programming and love to learn new technologies and new things. I
+            have proficient knowledge in javascript and special love to its
+            unique functionality which have changed the rules in software
             development. Finally, i want to add my tech stack is web and mobile
             applications.
           </p>
